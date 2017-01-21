@@ -1,0 +1,4 @@
+
+Access denied, you must be an administrator of the remote computer to use this
+command. Either have your account added to the administrator local group of
+the remote computer or to the domain administrator global group.

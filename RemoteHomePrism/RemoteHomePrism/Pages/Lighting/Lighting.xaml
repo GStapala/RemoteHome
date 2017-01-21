@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:nDropingAnimation="clr-namespace:RemoteHomePrism.BaseDropingPage.NDropingAnimation;assembly=RemoteHomePrism"
+             xmlns:options="clr-namespace:RemoteHomePrism.BaseDropingPage.Options;assembly=RemoteHomePrism"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="RemoteHomePrism.Pages.Lighting.Lighting"
+             Title="{Binding Title}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="TopLabel" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid BackgroundColor="{Binding Style.BackgroundColor}">
+        <Grid.RowDefinitions>
+            <!--Droping animation , title and image-->
+            <RowDefinition Height="300" />
+            <!--controls-->
+            <RowDefinition Height="3*" />
+            <!--<RowDefinition Height="7*"/>-->
+        </Grid.RowDefinitions>
+
+        <nDropingAnimation:NDropingControl x:Name="nControl" DropColor="{Binding Style.DropColor}"
+                                           DropColorPen="{Binding Style.DropColorPen}">
+            <nDropingAnimation:NDropingControl.Behaviors>
+                <nDropingAnimation:NDropingControlBehavior />
+            </nDropingAnimation:NDropingControl.Behaviors>
+        </nDropingAnimation:NDropingControl>
+
+        <nDropingAnimation:NDropingControlImage Grid.Column="0" Grid.Row="0"
+                                                BackgroundTopColor="{Binding Style.BackgroundTopColor}"
+                                                x:Name="nControlImage"
+                                                HexColor="{Binding Style.HexColor}"
+                                                HexPenColor="{Binding Style.HexPenColor}"
+                                                Icon="{Binding Style.IconPath}">
+            <nDropingAnimation:NDropingControlImage.Behaviors>
+                <nDropingAnimation:NDropingControlImageBehavior />
+            </nDropingAnimation:NDropingControlImage.Behaviors>
+        </nDropingAnimation:NDropingControlImage>
+
+        <!--Grid for controls-->
+        <ScrollView Padding="0" Margin="0" Grid.Row="1" HorizontalOptions="Start">
+            <options:OptionsGridLayout Grid.Row="1" x:Name="optionsGrid" RowSpacing="8" ColumnSpacing="0">
+                <options:OptionsGridLayout.RowDefinitions>
+                    <!--15 for title, 25 for switch-->
+                    <RowDefinition Height="25" />
+                    <RowDefinition Height="90" />
+                    <RowDefinition Height="65" />
+                    <RowDefinition Height="115" />
+                </options:OptionsGridLayout.RowDefinitions>
+
+                <options:SwitchControl Grid.Row="0" BindingContext="{Binding MainSwitch}" />
+
+                <Grid Grid.Row="1" RowSpacing="0" ColumnSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label Text="{Binding RoomTitle1}" Style="{StaticResource TopLabel}" />
+
+                    <options:EmptyControl Grid.Row="1" BindingContext="{Binding Room1}">
+                        <Grid RowSpacing="0" ColumnSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <options:SwitchControl Grid.Row="0" BindingContext="{Binding Switch1}" />
+                            <options:SwitchControl Grid.Row="1" BindingContext="{Binding Switch2}" />
+                            <options:SwitchControl Grid.Row="2" BindingContext="{Binding Switch3}" />
+                        </Grid>
+                    </options:EmptyControl>
+                </Grid>
+
+                <Grid Grid.Row="2" RowSpacing="0" ColumnSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label Text="{Binding RoomTitle2}" Style="{StaticResource TopLabel}" />
+                    <options:EmptyControl Grid.Row="1" BindingContext="{Binding Room2}">
+                        <Grid RowSpacing="0" ColumnSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <options:SwitchControl Grid.Row="0" BindingContext="{Binding Switch1}" />
+                            <options:SwitchControl Grid.Row="1" BindingContext="{Binding Switch2}" />
+                        </Grid>
+                    </options:EmptyControl>
+                </Grid>
+
+                <Grid Grid.Row="3" RowSpacing="0" ColumnSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label Text="{Binding RoomTitle3}" Style="{StaticResource TopLabel}" />
+                    <options:EmptyControl Grid.Row="1" BindingContext="{Binding Room3}">
+                        <Grid RowSpacing="0" ColumnSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <options:SwitchControl Grid.Row="0" BindingContext="{Binding Switch1}" />
+                            <options:SwitchControl Grid.Row="1" BindingContext="{Binding Switch2}" />
+                            <options:SwitchControl Grid.Row="2" BindingContext="{Binding Switch3}" />
+                            <options:SwitchControl Grid.Row="3" BindingContext="{Binding Switch4}" />
+                        </Grid>
+                    </options:EmptyControl>
+                </Grid>
+
+                <Grid.Behaviors>
+                    <options:OptionsGridBehaviour />
+                </Grid.Behaviors>
+            </options:OptionsGridLayout>
+
+        </ScrollView>
+
+    </Grid>
+</ContentPage>

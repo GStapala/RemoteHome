@@ -1,0 +1,13 @@
+﻿<resources>
+  <color name="primary">#2196F3</color>
+  <color name="primaryDark">#1976D2</color>
+  <color name="accent">#FFC107</color>
+  <color name="window_background">#F5F5F5</color>
+
+  <color name="mgray">#C0C0C0</color>
+  <color name="mdarkGray">#707070</color>
+  <color name="mlightGray">#707070</color>
+  <color name="morange">#F1892D</color>
+  <color name="mdarkOrange">#E67E22</color>
+  <color name="mwhite">#FAFAFA</color>
+</resources>

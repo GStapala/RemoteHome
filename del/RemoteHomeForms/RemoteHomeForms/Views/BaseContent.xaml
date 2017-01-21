@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RemoteHomeForms.Views.BaseContent">
+  <ContentView.Content>
+    <AbsoluteLayout >
+      <BoxView BackgroundColor="#0EAC51" AbsoluteLayout.LayoutBounds="0, 0, 1, .3" AbsoluteLayout.LayoutFlags="All"/>
+      <BoxView BackgroundColor="#006C11" AbsoluteLayout.LayoutBounds="0, .3, 1, .01" AbsoluteLayout.LayoutFlags="All"/>
+      <Label Text="{Binding TitleBase}" AbsoluteLayout.LayoutBounds=".5, .2, 1, .3" AbsoluteLayout.LayoutFlags="All"/>
+    </AbsoluteLayout>
+  </ContentView.Content>
+</ContentView>

@@ -1,0 +1,8 @@
+﻿<resources>
+
+  <style name="MyTheme" parent="android:Theme.Material">
+    <item name="android:colorActivatedHighlight">@color/morange</item>
+    <!--Hides the top bar icon-->
+    <item name="android:icon">@android:color/transparent</item>
+  </style>
+</resources>
