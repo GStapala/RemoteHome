@@ -13,7 +13,6 @@ Mobile app made in Xamarin forms with Web api 2 backend.
 * log4net
 
 ## TODO
-Most of Mobile 
 
 ### Percentage of completion :
 
@@ -37,4 +36,4 @@ Most of Mobile
 * Add new pages - gate, cameras.
 
 # About
-* Development by Grzegorz St¹pa³a
+* Development by Grzegorz Stapala
