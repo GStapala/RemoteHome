@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:RemoteHomePCL.Converters;assembly=RemoteHomePCL"
+             x:Class="RemoteHome.Pages.Temperature.TemperatureCell">
+
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <converters:ImgSourceConverter x:Key="ImageToResource" />
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <Grid BackgroundColor="{Binding BackgroundColor}" RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Text="{Binding RoomName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+               TextColor="Black" Style="{StaticResource LabelGlobalSyle}" />
+        <Image Grid.Row="1" Source="{Binding Icon, Converter={x:StaticResource Key=ImageToResource}}"
+               Aspect="AspectFit" />
+        <Label Grid.Row="2" Text="Temperature 0C" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+               TextColor="Black" Style="{StaticResource LabelGlobalSyle}" />
+    </Grid>
+</ContentView>

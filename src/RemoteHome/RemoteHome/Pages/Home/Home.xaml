@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:home="clr-namespace:RemoteHome.Pages.Home;assembly=RemoteHome"
+             xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             mvvm:ViewModelLocator.AutowireViewModel="True"
+             Title="{Binding Title}"
+             x:Class="RemoteHome.Pages.Home.Home"
+             BackgroundColor="{Binding BackgroundColor}">
+    <Grid RowSpacing="2" ColumnSpacing="2" Margin="0">
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <home:HomeCell Grid.Row="0" Grid.Column="0" BindingContext="{Binding WashMachinePage}" />
+        <home:HomeCell Grid.Row="0" Grid.Column="1" BindingContext="{Binding AudioPage}" />
+        <home:HomeCell Grid.Row="1" Grid.Column="0" BindingContext="{Binding TemperaturePage}" />
+        <home:HomeCell Grid.Row="1" Grid.Column="1" BindingContext="{Binding ShadesPage}" />
+        <home:HomeCell Grid.Row="2" Grid.Column="0" BindingContext="{Binding LightingPage}" />
+        <home:HomeCell Grid.Row="2" Grid.Column="1" BindingContext="{Binding AboutPage}" />
+
+    </Grid>
+</ContentPage>

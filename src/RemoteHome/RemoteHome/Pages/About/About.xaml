@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             mvvm:ViewModelLocator.AutowireViewModel="True"
+             Title="{Binding Title}"
+             x:Class="RemoteHome.Pages.About.About"
+             BackgroundColor="{Binding BackgroundColor}">
+    <Grid RowSpacing="2" ColumnSpacing="2" Margin="0">
+        <StackLayout>
+            <Label Text="Coding : Grzegorz Stąpała" FontFamily="AlfaSlabOneRegular" Style="{StaticResource LabelGlobalSyle}" />
+            <Label Text="Icons designed by Madebyoliver, EpicCoders, Vectors Market, Freepik from Flaticon" FontFamily="AlfaSlabOneRegular" Style="{StaticResource LabelGlobalSyle}" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

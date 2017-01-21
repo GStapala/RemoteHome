@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RemoteHome.BaseDropingPage.Options.SwitchControl"
+             xmlns:b="clr-namespace:Xamarin.Behaviors;assembly=Xamarin.Behaviors"
+             xmlns:imgSourceCoverter="clr-namespace:RemoteHomePCL.Converters;assembly=RemoteHomePCL">
+
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <imgSourceCoverter:ImgSourceConverter x:Key="ImageToResource" />
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <Grid BackgroundColor="{Binding BackgroundColor}" Padding="{Binding Padding}" x:Name="Grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*" />
+            <ColumnDefinition Width="6.5*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <StackLayout Grid.Column="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Image Source="{Binding SmallIcon, Converter={x:StaticResource Key=ImageToResource}}" />
+        </StackLayout>
+        <Label Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="{Binding Text}"
+               TextColor="{Binding TextColor}" Style="{StaticResource LabelGlobalSyle}" />
+        <Switch Grid.Column="2" IsToggled="{Binding IsToggled}">
+            <b:Interaction.Behaviors>
+                <b:BehaviorCollection>
+                    <b:EventToCommand CommandNameContext="{b:RelativeContext Grid}" EventName="Toggled"
+                                      CommandName="SwitchCommand" CommandParameter="{Binding .}" />
+                </b:BehaviorCollection>
+            </b:Interaction.Behaviors>
+        </Switch>
+    </Grid>
+</ContentView>
