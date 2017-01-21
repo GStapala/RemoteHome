@@ -25,7 +25,7 @@ namespace RemoteHomePrism
 
             Detail  = new CustomNavigationPage(displayPage) {MainColor = menuViewModel.ActionBarColor};
 
-            //Crashes on large screens - the menu is always on the screen
+            //Crashes on large screens - the menu is always on the screen.
             IsPresented = false;
         }
     }
