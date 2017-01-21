@@ -1,9 +1,8 @@
-# Remote home
+# Remote Home
 
 Mobile app made in Xamarin forms with Web api 2 backend.
 
 <img src="http://i.imgur.com/gf35NVA.gif"/>
-
 
 ## Technologies used :
 * Xamarin forms
@@ -12,20 +11,20 @@ Mobile app made in Xamarin forms with Web api 2 backend.
 * Unity - IoC
 * Web api 2
 * log4net
-* 
 
 ## TODO
-Lots of stuff is not yet implemented since it would require a specific device.
+Most of Mobile 
 
-### Percentage of completion
+### Percentage of completion :
 
-| Page                | Mobile    | Web Api |
+| Page     | Mobile | Web Api |
+| -------- | ------ | ------- |
 | Home  | 70 |  X  |
-| Wash machine  | 95 |  90  |
-| Audio  | 90 |  40  |
-| Lighting  | 90 |  0  |
-| Shades  | 90 |  0  |
-| Temperature  | 90 |  0  |
+| Wash machine | 95 | 90 |
+| Audio | 90 | 40 |
+| Lighting | 90 | 0 |
+| Shades  | 90 | 0 |
+| Temperature | 90 | 0 |
 
 ### Stuff to add :
 * Authorization - login page.
@@ -38,3 +37,4 @@ Lots of stuff is not yet implemented since it would require a specific device.
 * Add new pages - gate, cameras.
 
 # About
+* Development by Grzegorz St¹pa³a
