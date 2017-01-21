@@ -1,37 +1,35 @@
+# Remote home
 
-####Running the project from fresh xamarin installation :
-
-1. At first build can take loooong to set up some files in C:\Users\{user}\AppData\Local\Xamarin - just wait till it ends // if interrupted - delete the folder
-2. https://readerman1.wordpress.com/2016/05/11/xamarin-build-action-embeddedresource-is-not-supported-by-one-or-more-of-the-projects-targets/
--> clean poject
--> delete all bin/debug/release folders
-3. 
-<!--How to call localhost web api from emulator-->
-<!--http://briannoyesblog.azurewebsites.net/2016/03/06/calling-localhost-web-apis-from-visual-studio-android-emulator/-->
+Mobile app made in Xamarin forms with Web api 2 backend
+<img src="http://i.imgur.com/gf35NVA.gif"/>
 
 
+** Technologies used:
+* Xamarin forms
+* Mvvm with Prism
+*
 
-######################
-#######TO DO:#########
-######################
-		Authorization - login page
-		UnitTests - Xamarin
+# TODO
+Lots of stuff is not yet implemented since it would require a specific device
 
-	Pages :
-		Washmachine 90% - bugs - autorefreshing 
-		Audio 70% - bugs - autorefreshing , play/pause
-		MainMenu - 90% (some image/icon for the app)
-		About
+*Percentage of completion
 
-		No services created :
-		Lights
-		Shades
-		Security
-		Temperature
+| Page                | Mobile    | Web Api |
+|------------------------||:---:|:---:|
+| Home  | 70 |  X  |
+| Wash machine  | 95 |  90  |
+| Audio  | 90 |  40  |
+| Lighting  | 90 |  0  |
+| Shades  | 90 |  0  |
+| Temperature  | 90 |  0  |
 
-	Features TODO:
-		Ability to make a path from options. 
+*Stuff to add :
+** Authorization - login page
+** UnitTests - Xamarin
+** Ability to make a path from options. 
 			Example : On WashMachine page when we click power switch, the current program dropdown apears, then after we choose the program, next controll apears.
 			(Now they are all shown at start with IsActive property)
-		Custom Picker - made from label and modal window
-		Add new pages - gate, cameras
+** Custom Picker - made from label and modal window
+** Add new pages - gate, cameras
+
+# About

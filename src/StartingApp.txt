@@ -1,0 +1,9 @@
+####Running the project from fresh xamarin installation :
+
+1. At first build can take loooong to set up some files in C:\Users\{user}\AppData\Local\Xamarin - just wait till it ends // if interrupted - delete the folder
+2. https://readerman1.wordpress.com/2016/05/11/xamarin-build-action-embeddedresource-is-not-supported-by-one-or-more-of-the-projects-targets/
+-> clean poject
+-> delete all bin/debug/release folders
+3. 
+<!--How to call localhost web api from emulator-->
+<!--http://briannoyesblog.azurewebsites.net/2016/03/06/calling-localhost-web-apis-from-visual-studio-android-emulator/-->
