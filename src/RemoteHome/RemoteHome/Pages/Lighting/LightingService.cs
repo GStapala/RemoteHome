@@ -20,12 +20,12 @@ namespace RemoteHome.Pages.Lighting
 
         public Task SwitchPower(bool value)
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         public Task<BaseResponse<bool>> GetPowerSwichStatus()
         {
-            throw new NotImplementedException();
+            return null;
         }
     }
 }
