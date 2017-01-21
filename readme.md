@@ -2,25 +2,24 @@
 
 Mobile app made in Xamarin forms with Web api 2 backend.
 
-![Remote home Gif]<img src="http://i.imgur.com/gf35NVA.gif"/>
+<img src="http://i.imgur.com/gf35NVA.gif"/>
 
 
-** Technologies used :
+## Technologies used :
 * Xamarin forms
 * Prism - Mvvm 
 * NGraphics - Animations
 * Unity - IoC
-* Web api
+* Web api 2
 * log4net
 * 
 
-# TODO
+## TODO
 Lots of stuff is not yet implemented since it would require a specific device.
 
 ### Percentage of completion
 
 | Page                | Mobile    | Web Api |
-|------------------------||:---:|:---:|
 | Home  | 70 |  X  |
 | Wash machine  | 95 |  90  |
 | Audio  | 90 |  40  |
@@ -28,7 +27,7 @@ Lots of stuff is not yet implemented since it would require a specific device.
 | Shades  | 90 |  0  |
 | Temperature  | 90 |  0  |
 
-**Stuff to add :
+### Stuff to add :
 * Authorization - login page.
 * UnitTests - Xamarin App.
 * Main icon for application.
