@@ -12,7 +12,7 @@ Mobile app made in Xamarin forms with Web api 2 backend.
 * Web api 2
 * log4net
 
-## TODO
+## TODO :
 
 ### Percentage of completion :
 
@@ -29,11 +29,11 @@ Mobile app made in Xamarin forms with Web api 2 backend.
 * Authorization - login page.
 * UnitTests - Xamarin App.
 * Main icon for application.
-* Ability to make a path from options. 
-			Example : On WashMachine page when we click power switch, the current program dropdown apears, then after we choose the program, next controll apears.
-			(Now they are all shown at start with IsActive property)
-* Custom Picker - made from label and modal window.
+* Ability to add and remove lights/rooms etc.
+* Create a path from options.
+			Example : On WashMachine page when we click power switch, the current program dropdown apears, then after we choose the program, next controll apears and so on. (Currently they are all shown at start with IsActive property)
+* Custom Picker - create a custom one from label and modal window. Xamarin picker isn't working correctly as for now.
 * Add new pages - gate, cameras.
 
-# About
+# About :
 * Development by Grzegorz Stapala
